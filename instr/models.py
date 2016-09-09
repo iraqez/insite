@@ -1,4 +1,5 @@
 from django.db import models
+from tinymce.models import HTMLField
 
 class Subdivision(models.Model):
     title = models.CharField(max_length=100, verbose_name='Назва підрозділу')
@@ -11,9 +12,9 @@ class Subdivision(models.Model):
         return self.title
 
 class Leading(models.Model):
-    subdivision = models.ForeignKey(Subdivision, on_delete=models.CASCADE, verbose_name='Підрозділ')
+    subdivision = models.ManyToManyField(Subdivision, verbose_name='Підрозділ')
     title = models.CharField(max_length=100, verbose_name='Назва процедури')
-    text = models.TextField(verbose_name='Текст процедури')
+    text = HTMLField(verbose_name='Текст процедури')
     file = models.FileField(verbose_name='Файл для скачування')
 
     class Meta:

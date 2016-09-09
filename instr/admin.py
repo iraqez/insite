@@ -10,4 +10,4 @@ class SubdivisionAdmin(admin.ModelAdmin):
 
 
 class LeadingAdmin(admin.ModelAdmin):
-    fileds = ['subdivision', 'title', 'text', 'file']
+    list_display = ('title', 'subdivision',)
