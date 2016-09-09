@@ -1,13 +1,13 @@
 from django.contrib import admin
-
 from .models import Subdivision, Leading
 
-class SubdivisionAdmin(Subdivision):
+@admin.register(Subdivision)
+@admin.register(Leading)
+
+class SubdivisionAdmin(admin.ModelAdmin):
     fileds = ['title',]
 
-class LeadingAdmin(Leading):
+
+
+class LeadingAdmin(admin.ModelAdmin):
     fileds = ['subdivision', 'title', 'text', 'file']
-
-admin.site.register(Subdivision, SubdivisionAdmin)
-
-admin.site.register(Leading, LeadingAdmin)
