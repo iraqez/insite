@@ -7,7 +7,5 @@ from .models import Subdivision, Leading
 class SubdivisionAdmin(admin.ModelAdmin):
     fileds = ['title',]
 
-
-
 class LeadingAdmin(admin.ModelAdmin):
     list_display = ('title', 'subdivision',)
