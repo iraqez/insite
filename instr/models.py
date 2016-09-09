@@ -14,7 +14,7 @@ class Subdivision(models.Model):
 class Leading(models.Model):
     subdivision = models.ManyToManyField(Subdivision, verbose_name='Підрозділ')
     title = models.CharField(max_length=100, verbose_name='Назва процедури')
-    text = HTMLField(verbose_name='Текст процедури')
+    text = HTMLField(verbose_name='Зміст процедури')
     file = models.FileField(verbose_name='Файл для скачування')
 
     class Meta:
