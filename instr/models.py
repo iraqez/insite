@@ -11,11 +11,11 @@ class Subdivision(models.Model):
     def __str__(self):
         return self.title
 
+
 class Leading(models.Model):
     subdivision = models.ManyToManyField(Subdivision, verbose_name='Підрозділ')
     title = models.CharField(max_length=100, verbose_name='Назва процедури')
     text = HTMLField(verbose_name='Зміст процедури')
-    file = models.FileField(verbose_name='Файл для скачування')
 
     class Meta:
         verbose_name = u"Процедура"
@@ -23,3 +23,7 @@ class Leading(models.Model):
 
     def __str__(self):
         return self.title
+
+class Docs(models.Model):
+    file = models.FileField(verbose_name='Файл для скачування')
+    leading = models.ForeignKey(Leading, on_delete=models.CASCADE)

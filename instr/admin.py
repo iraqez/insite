@@ -1,11 +1,16 @@
 from django.contrib import admin
-from .models import Subdivision, Leading
+from .models import Subdivision, Leading, Docs
 
-@admin.register(Subdivision)
-@admin.register(Leading)
+
+@admin.register(Subdivision, Leading, Docs)
+class FileInLine(admin.TabularInline):
+    model = Docs
 
 class SubdivisionAdmin(admin.ModelAdmin):
-    fileds = ['title',]
+    None
+
 
 class LeadingAdmin(admin.ModelAdmin):
-    list_display = ('title', 'subdivision',)
+    inlines = [
+        FileInLine,
+    ]
