@@ -18,7 +18,6 @@ class SubdivisionAdmin(admin.ModelAdmin):
 class LeadingAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug' : ('title',)}
     inlines = [ DocsInLine ]
-    #None
 
 admin.site.register(Leading, LeadingAdmin,)
 admin.site.register(Subdivision, SubdivisionAdmin)
