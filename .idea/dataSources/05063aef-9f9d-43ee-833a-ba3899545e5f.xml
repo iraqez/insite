@@ -364,13 +364,13 @@ model</columns>
       <mandatory>1</mandatory>
       <data-type>INTEGER(0,-1)|4</data-type>
     </column>
-    <column id="89" parent="12" name="file">
-      <mandatory>1</mandatory>
-      <data-type>VARCHAR(100)(0,-1)|12</data-type>
-    </column>
-    <column id="90" parent="12" name="leading_id">
+    <column id="89" parent="12" name="leading_id">
       <mandatory>1</mandatory>
       <data-type>INTEGER(0,-1)|4</data-type>
+    </column>
+    <column id="90" parent="12" name="file">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR(100)(0,-1)|12</data-type>
     </column>
     <key id="91" parent="12">
       <columns>id</columns>
@@ -389,17 +389,17 @@ model</columns>
       <mandatory>1</mandatory>
       <data-type>INTEGER(0,-1)|4</data-type>
     </column>
-    <column id="94" parent="13" name="title">
+    <column id="94" parent="13" name="slug">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR(255)(0,-1)|12</data-type>
+    </column>
+    <column id="95" parent="13" name="title">
       <mandatory>1</mandatory>
       <data-type>VARCHAR(100)(0,-1)|12</data-type>
     </column>
-    <column id="95" parent="13" name="text">
+    <column id="96" parent="13" name="text">
       <mandatory>1</mandatory>
       <data-type>TEXT(0,-1)|12</data-type>
-    </column>
-    <column id="96" parent="13" name="slug">
-      <mandatory>1</mandatory>
-      <data-type>VARCHAR(255)(0,-1)|12</data-type>
     </column>
     <index id="97" parent="13" name="sqlite_autoindex_instr_leading_1">
       <name-surrogate>1</name-surrogate>

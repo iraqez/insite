@@ -1,7 +1,8 @@
 from django.shortcuts import render
 
-from django.http import HttpResponse
-
+from .models import Subdivision, Leading
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the instr index.")
+    latest_subdivisions_list = Subdivision.objects.all()
+    context = {'latest_subdivisions_list': latest_subdivisions_list}
+    return render(request, 'instr/index.html', context)

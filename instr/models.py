@@ -30,7 +30,7 @@ class Leading(models.Model):
 
 class Docs(models.Model):
     leading = models.ForeignKey(Leading, on_delete=models.CASCADE)
-    file = models.FileField(verbose_name='Файл для скачування')
+    file = models.FileField(verbose_name='Файл для скачування', upload_to='insrtukciy/')
 
     class Meta:
         verbose_name = u"Документ"
