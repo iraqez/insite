@@ -25,5 +25,6 @@ class Leading(models.Model):
         return self.title
 
 class Docs(models.Model):
-    file = models.FileField(verbose_name='Файл для скачування')
     leading = models.ForeignKey(Leading, on_delete=models.CASCADE)
+    file = models.FileField(verbose_name='Файл для скачування')
+
