@@ -28,3 +28,7 @@ class Docs(models.Model):
     leading = models.ForeignKey(Leading, on_delete=models.CASCADE)
     file = models.FileField(verbose_name='Файл для скачування')
 
+    class Meta:
+        verbose_name = u"Документ"
+        verbose_name_plural = u"Документи"
+
