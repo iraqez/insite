@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from tinymce import urls as tinyurls
+#from tinymce import urls as tinyurls
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),

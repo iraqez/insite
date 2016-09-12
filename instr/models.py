@@ -14,6 +14,8 @@ class Subdivision(models.Model):
 
 class Leading(models.Model):
     subdivision = models.ManyToManyField(Subdivision, verbose_name='Підрозділ')
+    slug = models.SlugField(verbose_name=r"Адресна строка", max_length=255, unique=True,
+                            help_text='Унікальне значення в адресній строці, добавляється автоматично.')
     title = models.CharField(max_length=100, verbose_name='Назва процедури')
     text = HTMLField(verbose_name='Зміст процедури')
 

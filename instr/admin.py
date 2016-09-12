@@ -14,6 +14,7 @@ class SubdivisionAdmin(admin.ModelAdmin):
 
 
 class LeadingAdmin(admin.ModelAdmin):
+    prepopulated_fields = {'slug' : ('title',)}
     inlines = [ DocsInLine ]
     #None
 
