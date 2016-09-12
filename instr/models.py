@@ -3,6 +3,8 @@ from tinymce.models import HTMLField
 
 class Subdivision(models.Model):
     title = models.CharField(max_length=100, verbose_name='Назва підрозділу')
+    slug = models.SlugField(verbose_name=r"Адресна строка", max_length=255, unique=True,
+                           help_text='Унікальне значення в адресній строці, добавляється автоматично.')
 
     class Meta:
         verbose_name = u"Підрозділ"

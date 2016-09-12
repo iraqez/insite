@@ -10,7 +10,9 @@ class DocsInLine(admin.StackedInline):
 
 
 class SubdivisionAdmin(admin.ModelAdmin):
-    list_display = ('title',)
+    list_display = ('title', )#'slug')
+    prepopulated_fields = {'slug' : ('title',)}
+
 
 
 class LeadingAdmin(admin.ModelAdmin):
