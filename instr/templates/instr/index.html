@@ -2,10 +2,6 @@
     <ul>
     {% for subdivision in latest_subdivisions_list %}
         <li><a href="/instrukciy/{{ subdivision.slug }}/">{{ subdivision.title }}</a></li>
-        {% for latest_subdivisions in latest_subdivisions_list %}
-            <li>{{  }}</li>
-
-        {% endfor %}
 
     {% endfor %}
     </ul>
