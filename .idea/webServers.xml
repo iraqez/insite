@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="8011cfe0-2098-4a9a-b7aa-65580f786355" name="insite" url="http://gis.agro2012.com.ua">
+        <fileTransfer host="gis.agro2012.com.ua" port="22" rootFolder="/home/django/sites" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
