@@ -1,0 +1,10 @@
+{% if latest_subdivisions_list %}
+    <ul>
+    {% for subdivision in latest_subdivisions_list %}
+        <li><a href="/instrukciy/{{ subdivision.slug }}/">{{ subdivision.title }}</a></li>
+
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>Немає підрозділів</p>
+{% endif %}
