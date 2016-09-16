@@ -1,0 +1,51 @@
+ERROR  : 14:27:25: ОШИБКА:  ошибка синтаксиса (примерное положение: ""Агрохолдинг 2012"")
+СТРОКА 3:     VALUES (1, ТОВ "Агрохолдинг 2012");
+                             ^
+ERROR  : 14:27:42: ОШИБКА:  значение не умещается в тип character(1)
+ERROR  : 14:28:01: ОШИБКА:  значение не умещается в тип character(1)
+ERROR  : 14:28:03: ОШИБКА:  значение не умещается в тип character(1)
+ERROR  : 14:32:50: ОШИБКА:  значение не умещается в тип character(1)
+ERROR  : 15:36:39: ОШИБКА:  колонка "id" отношения "agreement" уже существует
+ERROR  : 15:54:32: Error: ОШИБКА:  отношение "agreement" не существует
+СТРОКА 1: SELECT count(*) AS rows FROM ONLY agreement
+                                            ^
+ERROR  : 15:55:35: ОШИБКА:  колонка "cadnum" имеет тип cadnum, а выражение - integer
+СТРОКА 3:     VALUES (1, 233, 1, False, False);
+                         ^
+ПОДСКАЗКА:  Перепишите выражение или преобразуйте его тип.
+ERROR  : 15:56:03: ОШИБКА:  таблица "cadnum" отсутствует в предложении FROM
+СТРОКА 3:     VALUES (1, cadnum.id=233, 1, False, False);
+                         ^
+ERROR  : 15:56:40: ОШИБКА:  таблица "cadnum" отсутствует в предложении FROM
+СТРОКА 3:     VALUES (1, public.cadnum.id=233, 1, False, False);
+                         ^
+ERROR  : 16:11:37: ОШИБКА:  отношение "agreement_id_seq" не существует
+ERROR  : 16:14:21: ОШИБКА:  колонка "id", указанная в ограничении внешнего ключа, не существует
+ERROR  : 16:16:01: ОШИБКА:  ограничение внешнего ключа "using_cadnum_cadnum_fkey" нельзя реализовать
+ПОДРОБНОСТИ:  Колонки ключа "cadnum" и "cadnum" имеют несовместимые типы: integer и character.
+ERROR  : 16:16:20: ОШИБКА:  тип "carset" не существует
+СТРОКА 4:   cadnum carset REFERENCES cadnum(cadnum),
+                   ^
+ERROR  : 16:23:19: ОШИБКА:  таблица "company" отсутствует в предложении FROM
+СТРОКА 1: SELECT id, cadnum, company.name, signed, registered
+                             ^
+ERROR  : 16:38:02: Error: XRC error: 197: invalid row index 1: must be less than 1
+ERROR  : 16:38:04: Error: XRC error: 254: invalid row index 3: must be less than 3
+ERROR  : 17:08:18: ОШИБКА:  колонка "t" не существует
+СТРОКА 2:    SET signed=t, registered=t
+                        ^
+ERROR  : 17:10:26: ОШИБКА:  колонка "t" не существует
+СТРОКА 3:   WHERE signed=t;
+                         ^
+ERROR  : 17:14:06: ОШИБКА:  колонка "6821284800:02:012:0321" не существует
+СТРОКА 3:  WHERE cadnum="6821284800:02:012:0321";
+                        ^
+ERROR  : 17:36:29: ОШИБКА:  колонка "none" не существует
+СТРОКА 3:   where company = None;
+                            ^
+ERROR  : 17:38:36: ОШИБКА:  таблица "update_cadnum" отсутствует в предложении FROM
+СТРОКА 15:   AND cadnum.cadnum = update_cadnum.cadnum;
+                                 ^
+ERROR  : 17:54:23: ОШИБКА:  ошибка синтаксиса (примерное положение: "signed")
+СТРОКА 3: Were signed = True;
+               ^
