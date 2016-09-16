@@ -1,0 +1,1364 @@
+*** Starting uWSGI 2.0.13.1 (64bit) on [Tue Sep 13 17:17:40 2016] ***
+compiled with version: 4.9.2 on 13 September 2016 05:07:51
+os: Linux-3.16.0-4-amd64 #1 SMP Debian 3.16.7-ckt25-1 (2016-03-06)
+nodename: gps
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /etc/uwsgi/apps-enabled
+writing pidfile to /tmp/insite.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/django/sites/insite/mynewenv/
+your processes number limit is 11937
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/uwsgi.sock fd 3
+Python version: 3.4.2 (default, Oct  8 2014, 10:47:48)  [GCC 4.9.1]
+Set PythonHome to /home/django/sites/insite/mynewenv/
+Python main interpreter initialized at 0x1e75d40
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415280 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1e75d40 pid: 24188 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 24188)
+spawned uWSGI worker 1 (pid: 24190, cores: 2)
+spawned uWSGI worker 2 (pid: 24192, cores: 2)
+spawned uWSGI worker 3 (pid: 24194, cores: 2)
+spawned uWSGI worker 4 (pid: 24196, cores: 2)
+SIGINT/SIGQUIT received...killing workers...
+Tue Sep 13 17:18:01 2016 - received message 0 from emperor
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.13.1 (64bit) on [Tue Sep 13 17:22:02 2016] ***
+compiled with version: 4.9.2 on 13 September 2016 05:07:51
+os: Linux-3.16.0-4-amd64 #1 SMP Debian 3.16.7-ckt25-1 (2016-03-06)
+nodename: gps
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /etc/uwsgi/apps-enabled
+writing pidfile to /tmp/insite.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/django/sites/insite/mynewenv/
+your processes number limit is 11937
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/uwsgi.sock fd 3
+Python version: 3.4.2 (default, Oct  8 2014, 10:47:48)  [GCC 4.9.1]
+Set PythonHome to /home/django/sites/insite/mynewenv/
+Python main interpreter initialized at 0x1454d40
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415280 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1454d40 pid: 24317 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 24317)
+spawned uWSGI worker 1 (pid: 24320, cores: 2)
+spawned uWSGI worker 2 (pid: 24322, cores: 2)
+spawned uWSGI worker 3 (pid: 24324, cores: 2)
+spawned uWSGI worker 4 (pid: 24326, cores: 2)
+[pid: 24324|app: 0|req: 1/1] 192.168.5.254 () {42 vars in 826 bytes} [Tue Sep 13 17:22:27 2016] GET / => generated 56 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+Not Found: /favicon.ico
+[pid: 24326|app: 0|req: 1/2] 192.168.5.254 () {42 vars in 779 bytes} [Tue Sep 13 17:22:28 2016] GET /favicon.ico => generated 2149 bytes in 11 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 24326|app: 0|req: 2/3] 192.168.5.254 () {42 vars in 836 bytes} [Tue Sep 13 17:22:40 2016] GET /admin => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 122 bytes (1 switches on core 1)
+[pid: 24320|app: 0|req: 1/4] 192.168.5.254 () {42 vars in 838 bytes} [Tue Sep 13 17:22:41 2016] GET /admin/ => generated 7277 bytes in 49 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 24326|app: 0|req: 3/5] 192.168.5.254 () {42 vars in 826 bytes} [Tue Sep 13 17:31:40 2016] GET / => generated 56 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 1)
+[pid: 24324|app: 0|req: 2/6] 192.168.5.254 () {42 vars in 846 bytes} [Tue Sep 13 17:32:05 2016] GET /instrukciy => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 127 bytes (1 switches on core 1)
+[pid: 24322|app: 0|req: 1/7] 192.168.5.254 () {42 vars in 848 bytes} [Tue Sep 13 17:32:05 2016] GET /instrukciy/ => generated 379 bytes in 21 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+Not Found: /instrukciy/inzhenerna-sluzhba/
+[pid: 24326|app: 0|req: 4/8] 192.168.5.254 () {44 vars in 934 bytes} [Tue Sep 13 17:32:10 2016] GET /instrukciy/inzhenerna-sluzhba/ => generated 2269 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+Tue Sep 13 17:43:45 2016 - received message 0 from emperor
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.13.1 (64bit) on [Tue Sep 13 17:44:10 2016] ***
+compiled with version: 4.9.2 on 13 September 2016 05:07:51
+os: Linux-3.16.0-4-amd64 #1 SMP Debian 3.16.7-ckt25-1 (2016-03-06)
+nodename: gps
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /etc/uwsgi/apps-enabled
+writing pidfile to /tmp/insite.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/django/sites/insite/mynewenv/
+your processes number limit is 11937
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/uwsgi.sock fd 3
+Python version: 3.4.2 (default, Oct  8 2014, 10:47:48)  [GCC 4.9.1]
+Set PythonHome to /home/django/sites/insite/mynewenv/
+Python main interpreter initialized at 0x1efad40
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415280 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+Traceback (most recent call last):
+  File "../insite/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/apps/config.py", line 199, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/importlib/__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/models.py", line 6, in <module>
+    from tinymce import widgets as tinymce_widgets
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/widgets.py", line 23, in <module>
+    import tinymce.settings
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/settings.py", line 17, in <module>
+    JS_ROOT = getattr(settings, 'TINYMCE_JS_ROOT', finders.find('tiny_mce', all=False))
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 249, in find
+    for finder in get_finders():
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 264, in get_finders
+    yield get_finder(finder_path)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/functools.py", line 434, in wrapper
+    result = user_function(*args, **kwds)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 277, in get_finder
+    return Finder()
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 66, in __init__
+    "The STATICFILES_DIRS setting should "
+django.core.exceptions.ImproperlyConfigured: The STATICFILES_DIRS setting should not contain the STATIC_ROOT setting
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 24843)
+spawned uWSGI worker 1 (pid: 24845, cores: 2)
+spawned uWSGI worker 2 (pid: 24847, cores: 2)
+spawned uWSGI worker 3 (pid: 24849, cores: 2)
+spawned uWSGI worker 4 (pid: 24851, cores: 2)
+--- no python application found, check your startup logs for errors ---
+[pid: 24845|app: -1|req: -1/1] 192.168.5.254 () {42 vars in 826 bytes} [Tue Sep 13 18:59:18 2016] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 24845|app: -1|req: -1/2] 192.168.5.254 () {42 vars in 779 bytes} [Tue Sep 13 18:59:19 2016] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 24851|app: -1|req: -1/3] 192.168.5.254 () {44 vars in 857 bytes} [Tue Sep 13 18:59:28 2016] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 24851|app: -1|req: -1/4] 192.168.5.254 () {46 vars in 832 bytes} [Tue Sep 13 18:59:29 2016] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 24845|app: -1|req: -1/5] 192.168.5.254 () {44 vars in 857 bytes} [Tue Sep 13 18:59:29 2016] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 24845|app: -1|req: -1/6] 192.168.5.254 () {46 vars in 832 bytes} [Tue Sep 13 18:59:29 2016] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+Gracefully killing worker 4 (pid: 24851)...
+Gracefully killing worker 3 (pid: 24849)...
+Gracefully killing worker 2 (pid: 24847)...
+Gracefully killing worker 1 (pid: 24845)...
+...gracefully killing workers...
+Tue Sep 13 19:15:42 2016 - received message 1 from emperor
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /etc/uwsgi/apps-enabled
+closing all non-uwsgi socket fds > 2 (max_fd = 65536)...
+found fd 3 mapped to socket 0 (/tmp/uwsgi.sock)
+running /usr/local/bin/uwsgi
+*** has_emperor mode detected (fd: 6) ***
+[uWSGI] getting INI configuration from insite.ini
+*** Starting uWSGI 2.0.13.1 (64bit) on [Tue Sep 13 19:15:43 2016] ***
+compiled with version: 4.9.2 on 13 September 2016 05:07:51
+os: Linux-3.16.0-4-amd64 #1 SMP Debian 3.16.7-ckt25-1 (2016-03-06)
+nodename: gps
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /etc/uwsgi/apps-enabled
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/django/sites/insite/mynewenv/
+your processes number limit is 11937
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /tmp/uwsgi.sock fd 3
+Python version: 3.4.2 (default, Oct  8 2014, 10:47:48)  [GCC 4.9.1]
+Set PythonHome to /home/django/sites/insite/mynewenv/
+Python main interpreter initialized at 0x1e34d00
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415280 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+Traceback (most recent call last):
+  File "../insite/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/apps/config.py", line 199, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/importlib/__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/models.py", line 6, in <module>
+    from tinymce import widgets as tinymce_widgets
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/widgets.py", line 23, in <module>
+    import tinymce.settings
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/settings.py", line 17, in <module>
+    JS_ROOT = getattr(settings, 'TINYMCE_JS_ROOT', finders.find('tiny_mce', all=False))
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 249, in find
+    for finder in get_finders():
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 264, in get_finders
+    yield get_finder(finder_path)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/functools.py", line 434, in wrapper
+    result = user_function(*args, **kwds)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 277, in get_finder
+    return Finder()
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 66, in __init__
+    "The STATICFILES_DIRS setting should "
+django.core.exceptions.ImproperlyConfigured: The STATICFILES_DIRS setting should not contain the STATIC_ROOT setting
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 24843)
+spawned uWSGI worker 1 (pid: 26678, cores: 2)
+spawned uWSGI worker 2 (pid: 26680, cores: 2)
+spawned uWSGI worker 3 (pid: 26682, cores: 2)
+spawned uWSGI worker 4 (pid: 26684, cores: 2)
+--- no python application found, check your startup logs for errors ---
+[pid: 26684|app: -1|req: -1/1] 192.168.5.254 () {44 vars in 857 bytes} [Tue Sep 13 20:04:47 2016] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 26684|app: -1|req: -1/2] 192.168.5.254 () {46 vars in 832 bytes} [Tue Sep 13 20:04:47 2016] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+*** Starting uWSGI 2.0.13.1 (64bit) on [Tue Sep 13 20:11:14 2016] ***
+compiled with version: 4.9.2 on 13 September 2016 05:07:51
+os: Linux-3.16.0-4-amd64 #1 SMP Debian 3.16.7-ckt25-1 (2016-03-06)
+nodename: gps
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /etc/uwsgi/apps-enabled
+writing pidfile to /tmp/insite.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/django/sites/insite/mynewenv/
+your processes number limit is 11937
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/uwsgi.sock fd 3
+Python version: 3.4.2 (default, Oct  8 2014, 10:47:48)  [GCC 4.9.1]
+Set PythonHome to /home/django/sites/insite/mynewenv/
+Python main interpreter initialized at 0x13f2cf0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415280 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+Traceback (most recent call last):
+  File "../insite/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/apps/config.py", line 199, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/importlib/__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/models.py", line 6, in <module>
+    from tinymce import widgets as tinymce_widgets
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/widgets.py", line 23, in <module>
+    import tinymce.settings
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/settings.py", line 17, in <module>
+    JS_ROOT = getattr(settings, 'TINYMCE_JS_ROOT', finders.find('tiny_mce', all=False))
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 249, in find
+    for finder in get_finders():
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 264, in get_finders
+    yield get_finder(finder_path)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/functools.py", line 434, in wrapper
+    result = user_function(*args, **kwds)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 277, in get_finder
+    return Finder()
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 66, in __init__
+    "The STATICFILES_DIRS setting should "
+django.core.exceptions.ImproperlyConfigured: The STATICFILES_DIRS setting should not contain the STATIC_ROOT setting
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 27808)
+spawned uWSGI worker 1 (pid: 27810, cores: 2)
+spawned uWSGI worker 2 (pid: 27812, cores: 2)
+spawned uWSGI worker 3 (pid: 27814, cores: 2)
+spawned uWSGI worker 4 (pid: 27816, cores: 2)
+--- no python application found, check your startup logs for errors ---
+[pid: 27810|app: -1|req: -1/1] 192.168.5.254 () {42 vars in 826 bytes} [Tue Sep 13 20:11:33 2016] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 27810|app: -1|req: -1/2] 192.168.5.254 () {42 vars in 779 bytes} [Tue Sep 13 20:11:33 2016] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27816|app: -1|req: -1/3] 192.168.5.254 () {44 vars in 857 bytes} [Tue Sep 13 20:12:53 2016] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 27816|app: -1|req: -1/4] 192.168.5.254 () {46 vars in 832 bytes} [Tue Sep 13 20:12:53 2016] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 27816|app: -1|req: -1/5] 192.168.5.254 () {44 vars in 857 bytes} [Tue Sep 13 20:12:54 2016] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 27810|app: -1|req: -1/6] 192.168.5.254 () {46 vars in 832 bytes} [Tue Sep 13 20:12:54 2016] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+Tue Sep 13 20:13:05 2016 - received message 0 from emperor
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+Tue Sep 13 20:15:17 2016 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Tue Sep 13 20:15:17 2016 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Tue Sep 13 20:15:17 2016 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Tue Sep 13 20:15:17 2016 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Tue Sep 13 20:15:17 2016 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Tue Sep 13 20:15:17 2016 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Tue Sep 13 20:15:17 2016 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Tue Sep 13 20:15:17 2016 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.13.1 (64bit) on [Tue Sep 13 20:15:24 2016] ***
+compiled with version: 4.9.2 on 13 September 2016 05:07:51
+os: Linux-3.16.0-4-amd64 #1 SMP Debian 3.16.7-ckt25-1 (2016-03-06)
+nodename: gps
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /etc/uwsgi/apps-enabled
+writing pidfile to /tmp/insite.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/django/sites/insite/mynewenv/
+your processes number limit is 11937
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/uwsgi.sock fd 3
+Python version: 3.4.2 (default, Oct  8 2014, 10:47:48)  [GCC 4.9.1]
+Set PythonHome to /home/django/sites/insite/mynewenv/
+Python main interpreter initialized at 0x21cccf0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415280 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+Traceback (most recent call last):
+  File "../insite/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/apps/config.py", line 199, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/importlib/__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/models.py", line 6, in <module>
+    from tinymce import widgets as tinymce_widgets
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/widgets.py", line 23, in <module>
+    import tinymce.settings
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/settings.py", line 17, in <module>
+    JS_ROOT = getattr(settings, 'TINYMCE_JS_ROOT', finders.find('tiny_mce', all=False))
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 249, in find
+    for finder in get_finders():
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 264, in get_finders
+    yield get_finder(finder_path)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/functools.py", line 434, in wrapper
+    result = user_function(*args, **kwds)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 277, in get_finder
+    return Finder()
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 66, in __init__
+    "The STATICFILES_DIRS setting should "
+django.core.exceptions.ImproperlyConfigured: The STATICFILES_DIRS setting should not contain the STATIC_ROOT setting
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 28413)
+spawned uWSGI worker 1 (pid: 28415, cores: 2)
+spawned uWSGI worker 2 (pid: 28417, cores: 2)
+spawned uWSGI worker 3 (pid: 28419, cores: 2)
+spawned uWSGI worker 4 (pid: 28421, cores: 2)
+--- no python application found, check your startup logs for errors ---
+[pid: 28421|app: -1|req: -1/1] 192.168.5.254 () {44 vars in 857 bytes} [Tue Sep 13 20:15:36 2016] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 28421|app: -1|req: -1/2] 192.168.5.254 () {46 vars in 832 bytes} [Tue Sep 13 20:15:36 2016] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 28421|app: -1|req: -1/3] 192.168.5.254 () {44 vars in 857 bytes} [Tue Sep 13 20:15:37 2016] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 28421|app: -1|req: -1/4] 192.168.5.254 () {46 vars in 832 bytes} [Tue Sep 13 20:15:37 2016] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+Tue Sep 13 20:16:39 2016 - received message 0 from emperor
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.13.1 (64bit) on [Tue Sep 13 20:16:45 2016] ***
+compiled with version: 4.9.2 on 13 September 2016 05:07:51
+os: Linux-3.16.0-4-amd64 #1 SMP Debian 3.16.7-ckt25-1 (2016-03-06)
+nodename: gps
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /etc/uwsgi/apps-enabled
+writing pidfile to /tmp/insite.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/django/sites/insite/mynewenv/
+your processes number limit is 11937
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/uwsgi.sock fd 3
+Python version: 3.4.2 (default, Oct  8 2014, 10:47:48)  [GCC 4.9.1]
+Set PythonHome to /home/django/sites/insite/mynewenv/
+Python main interpreter initialized at 0xd93cf0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415280 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+Traceback (most recent call last):
+  File "../insite/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/apps/config.py", line 199, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/importlib/__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/models.py", line 6, in <module>
+    from tinymce import widgets as tinymce_widgets
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/widgets.py", line 23, in <module>
+    import tinymce.settings
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/settings.py", line 17, in <module>
+    JS_ROOT = getattr(settings, 'TINYMCE_JS_ROOT', finders.find('tiny_mce', all=False))
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 249, in find
+    for finder in get_finders():
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 264, in get_finders
+    yield get_finder(finder_path)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/functools.py", line 434, in wrapper
+    result = user_function(*args, **kwds)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 277, in get_finder
+    return Finder()
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 66, in __init__
+    "The STATICFILES_DIRS setting should "
+django.core.exceptions.ImproperlyConfigured: The STATICFILES_DIRS setting should not contain the STATIC_ROOT setting
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 28492)
+spawned uWSGI worker 1 (pid: 28494, cores: 2)
+spawned uWSGI worker 2 (pid: 28496, cores: 2)
+spawned uWSGI worker 3 (pid: 28498, cores: 2)
+spawned uWSGI worker 4 (pid: 28500, cores: 2)
+--- no python application found, check your startup logs for errors ---
+[pid: 28500|app: -1|req: -1/1] 192.168.5.254 () {44 vars in 857 bytes} [Tue Sep 13 20:17:01 2016] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 28500|app: -1|req: -1/2] 192.168.5.254 () {46 vars in 832 bytes} [Tue Sep 13 20:17:01 2016] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 28500|app: -1|req: -1/3] 192.168.5.254 () {44 vars in 857 bytes} [Tue Sep 13 20:17:01 2016] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 28498|app: -1|req: -1/4] 192.168.5.254 () {46 vars in 832 bytes} [Tue Sep 13 20:17:01 2016] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 28500|app: -1|req: -1/5] 192.168.5.254 () {44 vars in 857 bytes} [Tue Sep 13 20:21:37 2016] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 28498|app: -1|req: -1/6] 192.168.5.254 () {46 vars in 832 bytes} [Tue Sep 13 20:21:37 2016] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 28500|app: -1|req: -1/7] 192.168.5.254 () {44 vars in 857 bytes} [Tue Sep 13 20:21:37 2016] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 28494|app: -1|req: -1/8] 192.168.5.254 () {46 vars in 832 bytes} [Tue Sep 13 20:21:37 2016] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+SIGINT/SIGQUIT received...killing workers...
+Tue Sep 13 20:21:44 2016 - received message 0 from emperor
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.13.1 (64bit) on [Tue Sep 13 20:22:54 2016] ***
+compiled with version: 4.9.2 on 13 September 2016 05:07:51
+os: Linux-3.16.0-4-amd64 #1 SMP Debian 3.16.7-ckt25-1 (2016-03-06)
+nodename: gps
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /etc/uwsgi/apps-enabled
+writing pidfile to /tmp/insite.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/django/sites/insite/mynewenv/
+your processes number limit is 11937
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/uwsgi.sock fd 3
+Python version: 3.4.2 (default, Oct  8 2014, 10:47:48)  [GCC 4.9.1]
+Set PythonHome to /home/django/sites/insite/mynewenv/
+Python main interpreter initialized at 0x1a27cf0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415280 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+Traceback (most recent call last):
+  File "../insite/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/apps/config.py", line 199, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/importlib/__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/models.py", line 6, in <module>
+    from tinymce import widgets as tinymce_widgets
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/widgets.py", line 23, in <module>
+    import tinymce.settings
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/settings.py", line 17, in <module>
+    JS_ROOT = getattr(settings, 'TINYMCE_JS_ROOT', finders.find('tiny_mce', all=False))
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 249, in find
+    for finder in get_finders():
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 264, in get_finders
+    yield get_finder(finder_path)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/functools.py", line 434, in wrapper
+    result = user_function(*args, **kwds)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 277, in get_finder
+    return Finder()
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 66, in __init__
+    "The STATICFILES_DIRS setting should "
+django.core.exceptions.ImproperlyConfigured: The STATICFILES_DIRS setting should not contain the STATIC_ROOT setting
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 28669)
+spawned uWSGI worker 1 (pid: 28671, cores: 2)
+spawned uWSGI worker 2 (pid: 28673, cores: 2)
+spawned uWSGI worker 3 (pid: 28675, cores: 2)
+spawned uWSGI worker 4 (pid: 28677, cores: 2)
+SIGINT/SIGQUIT received...killing workers...
+Tue Sep 13 20:23:18 2016 - received message 0 from emperor
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.13.1 (64bit) on [Tue Sep 13 20:23:31 2016] ***
+compiled with version: 4.9.2 on 13 September 2016 05:07:51
+os: Linux-3.16.0-4-amd64 #1 SMP Debian 3.16.7-ckt25-1 (2016-03-06)
+nodename: gps
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /etc/uwsgi/apps-enabled
+writing pidfile to /tmp/insite.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/django/sites/insite/mynewenv/
+your processes number limit is 11937
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/uwsgi.sock fd 3
+Python version: 3.4.2 (default, Oct  8 2014, 10:47:48)  [GCC 4.9.1]
+Set PythonHome to /home/django/sites/insite/mynewenv/
+Python main interpreter initialized at 0x1829d40
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415280 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+Traceback (most recent call last):
+  File "../insite/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/apps/config.py", line 199, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/importlib/__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/models.py", line 6, in <module>
+    from tinymce import widgets as tinymce_widgets
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/widgets.py", line 23, in <module>
+    import tinymce.settings
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/settings.py", line 17, in <module>
+    JS_ROOT = getattr(settings, 'TINYMCE_JS_ROOT', finders.find('tiny_mce', all=False))
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 249, in find
+    for finder in get_finders():
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 264, in get_finders
+    yield get_finder(finder_path)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/functools.py", line 434, in wrapper
+    result = user_function(*args, **kwds)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 277, in get_finder
+    return Finder()
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 66, in __init__
+    "The STATICFILES_DIRS setting should "
+django.core.exceptions.ImproperlyConfigured: The STATICFILES_DIRS setting should not contain the STATIC_ROOT setting
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 28692)
+spawned uWSGI worker 1 (pid: 28694, cores: 2)
+spawned uWSGI worker 2 (pid: 28696, cores: 2)
+spawned uWSGI worker 3 (pid: 28698, cores: 2)
+spawned uWSGI worker 4 (pid: 28700, cores: 2)
+--- no python application found, check your startup logs for errors ---
+[pid: 28696|app: -1|req: -1/1] 192.168.5.254 () {44 vars in 857 bytes} [Tue Sep 13 20:23:37 2016] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 28694|app: -1|req: -1/2] 192.168.5.254 () {46 vars in 832 bytes} [Tue Sep 13 20:23:37 2016] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+SIGINT/SIGQUIT received...killing workers...
+Tue Sep 13 20:23:39 2016 - received message 0 from emperor
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.13.1 (64bit) on [Tue Sep 13 20:23:54 2016] ***
+compiled with version: 4.9.2 on 13 September 2016 05:07:51
+os: Linux-3.16.0-4-amd64 #1 SMP Debian 3.16.7-ckt25-1 (2016-03-06)
+nodename: gps
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /etc/uwsgi/apps-enabled
+writing pidfile to /tmp/insite.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/django/sites/insite/mynewenv/
+your processes number limit is 11937
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/uwsgi.sock fd 3
+Python version: 3.4.2 (default, Oct  8 2014, 10:47:48)  [GCC 4.9.1]
+Set PythonHome to /home/django/sites/insite/mynewenv/
+Python main interpreter initialized at 0x80dd50
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415280 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+Traceback (most recent call last):
+  File "../insite/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/apps/config.py", line 199, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/importlib/__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/models.py", line 6, in <module>
+    from tinymce import widgets as tinymce_widgets
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/widgets.py", line 23, in <module>
+    import tinymce.settings
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/settings.py", line 17, in <module>
+    JS_ROOT = getattr(settings, 'TINYMCE_JS_ROOT', finders.find('tiny_mce', all=False))
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 249, in find
+    for finder in get_finders():
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 264, in get_finders
+    yield get_finder(finder_path)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/functools.py", line 434, in wrapper
+    result = user_function(*args, **kwds)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 277, in get_finder
+    return Finder()
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 66, in __init__
+    "The STATICFILES_DIRS setting should "
+django.core.exceptions.ImproperlyConfigured: The STATICFILES_DIRS setting should not contain the STATIC_ROOT setting
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 28706)
+spawned uWSGI worker 1 (pid: 28708, cores: 2)
+spawned uWSGI worker 2 (pid: 28710, cores: 2)
+spawned uWSGI worker 3 (pid: 28712, cores: 2)
+spawned uWSGI worker 4 (pid: 28714, cores: 2)
+--- no python application found, check your startup logs for errors ---
+[pid: 28714|app: -1|req: -1/1] 192.168.5.254 () {44 vars in 857 bytes} [Tue Sep 13 20:24:00 2016] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 28708|app: -1|req: -1/2] 192.168.5.254 () {46 vars in 832 bytes} [Tue Sep 13 20:24:00 2016] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 28714|app: -1|req: -1/3] 192.168.5.254 () {44 vars in 857 bytes} [Tue Sep 13 20:24:00 2016] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 28712|app: -1|req: -1/4] 192.168.5.254 () {46 vars in 832 bytes} [Tue Sep 13 20:24:00 2016] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 28712|app: -1|req: -1/5] 192.168.5.254 () {44 vars in 857 bytes} [Tue Sep 13 20:24:08 2016] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 28714|app: -1|req: -1/6] 192.168.5.254 () {46 vars in 832 bytes} [Tue Sep 13 20:24:09 2016] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+Tue Sep 13 20:24:11 2016 - received message 0 from emperor
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.13.1 (64bit) on [Tue Sep 13 20:24:27 2016] ***
+compiled with version: 4.9.2 on 13 September 2016 05:07:51
+os: Linux-3.16.0-4-amd64 #1 SMP Debian 3.16.7-ckt25-1 (2016-03-06)
+nodename: gps
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /etc/uwsgi/apps-enabled
+writing pidfile to /tmp/insite.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/django/sites/insite/mynewenv/
+your processes number limit is 11937
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/uwsgi.sock fd 3
+Python version: 3.4.2 (default, Oct  8 2014, 10:47:48)  [GCC 4.9.1]
+Set PythonHome to /home/django/sites/insite/mynewenv/
+Python main interpreter initialized at 0x2347d50
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415280 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+Traceback (most recent call last):
+  File "../insite/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/apps/config.py", line 199, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/importlib/__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/models.py", line 6, in <module>
+    from tinymce import widgets as tinymce_widgets
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/widgets.py", line 23, in <module>
+    import tinymce.settings
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/settings.py", line 17, in <module>
+    JS_ROOT = getattr(settings, 'TINYMCE_JS_ROOT', finders.find('tiny_mce', all=False))
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 249, in find
+    for finder in get_finders():
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 264, in get_finders
+    yield get_finder(finder_path)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/functools.py", line 434, in wrapper
+    result = user_function(*args, **kwds)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 277, in get_finder
+    return Finder()
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 66, in __init__
+    "The STATICFILES_DIRS setting should "
+django.core.exceptions.ImproperlyConfigured: The STATICFILES_DIRS setting should not contain the STATIC_ROOT setting
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 28771)
+spawned uWSGI worker 1 (pid: 28773, cores: 2)
+spawned uWSGI worker 2 (pid: 28775, cores: 2)
+spawned uWSGI worker 3 (pid: 28777, cores: 2)
+spawned uWSGI worker 4 (pid: 28779, cores: 2)
+SIGINT/SIGQUIT received...killing workers...
+Tue Sep 13 20:24:37 2016 - received message 0 from emperor
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.13.1 (64bit) on [Tue Sep 13 20:25:18 2016] ***
+compiled with version: 4.9.2 on 13 September 2016 05:07:51
+os: Linux-3.16.0-4-amd64 #1 SMP Debian 3.16.7-ckt25-1 (2016-03-06)
+nodename: gps
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /etc/uwsgi/apps-enabled
+writing pidfile to /tmp/insite.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/django/sites/insite/mynewenv/
+your processes number limit is 11937
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/uwsgi.sock fd 3
+Python version: 3.4.2 (default, Oct  8 2014, 10:47:48)  [GCC 4.9.1]
+Set PythonHome to /home/django/sites/insite/mynewenv/
+Python main interpreter initialized at 0xf2ed50
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415280 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+Traceback (most recent call last):
+  File "../insite/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/apps/config.py", line 199, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/importlib/__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/models.py", line 6, in <module>
+    from tinymce import widgets as tinymce_widgets
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/widgets.py", line 23, in <module>
+    import tinymce.settings
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/settings.py", line 17, in <module>
+    JS_ROOT = getattr(settings, 'TINYMCE_JS_ROOT', finders.find('tiny_mce', all=False))
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 249, in find
+    for finder in get_finders():
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 264, in get_finders
+    yield get_finder(finder_path)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/functools.py", line 434, in wrapper
+    result = user_function(*args, **kwds)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 277, in get_finder
+    return Finder()
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 66, in __init__
+    "The STATICFILES_DIRS setting should "
+django.core.exceptions.ImproperlyConfigured: The STATICFILES_DIRS setting should not contain the STATIC_ROOT setting
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 28811)
+spawned uWSGI worker 1 (pid: 28813, cores: 2)
+spawned uWSGI worker 2 (pid: 28815, cores: 2)
+spawned uWSGI worker 3 (pid: 28817, cores: 2)
+spawned uWSGI worker 4 (pid: 28819, cores: 2)
+SIGINT/SIGQUIT received...killing workers...
+Tue Sep 13 20:26:41 2016 - received message 0 from emperor
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.13.1 (64bit) on [Tue Sep 13 20:28:16 2016] ***
+compiled with version: 4.9.2 on 13 September 2016 20:27:59
+os: Linux-3.16.0-4-amd64 #1 SMP Debian 3.16.7-ckt25-1 (2016-03-06)
+nodename: gps
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /etc/uwsgi/apps-enabled
+writing pidfile to /tmp/insite.pid
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/django/sites/insite/mynewenv/
+your processes number limit is 11937
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/uwsgi.sock fd 3
+Python version: 3.4.2 (default, Oct  8 2014, 10:47:48)  [GCC 4.9.1]
+Set PythonHome to /home/django/sites/insite/mynewenv/
+Python main interpreter initialized at 0x203a100
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+Traceback (most recent call last):
+  File "../insite/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/apps/config.py", line 199, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/importlib/__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/models.py", line 6, in <module>
+    from tinymce import widgets as tinymce_widgets
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/widgets.py", line 23, in <module>
+    import tinymce.settings
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/settings.py", line 17, in <module>
+    JS_ROOT = getattr(settings, 'TINYMCE_JS_ROOT', finders.find('tiny_mce', all=False))
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 249, in find
+    for finder in get_finders():
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 264, in get_finders
+    yield get_finder(finder_path)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/functools.py", line 434, in wrapper
+    result = user_function(*args, **kwds)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 277, in get_finder
+    return Finder()
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 66, in __init__
+    "The STATICFILES_DIRS setting should "
+django.core.exceptions.ImproperlyConfigured: The STATICFILES_DIRS setting should not contain the STATIC_ROOT setting
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 29972)
+spawned uWSGI worker 1 (pid: 29974, cores: 2)
+spawned uWSGI worker 2 (pid: 29976, cores: 2)
+spawned uWSGI worker 3 (pid: 29978, cores: 2)
+spawned uWSGI worker 4 (pid: 29980, cores: 2)
+--- no python application found, check your startup logs for errors ---
+[pid: 29974|app: -1|req: -1/1] 192.168.5.254 () {44 vars in 857 bytes} [Tue Sep 13 20:28:24 2016] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 29976|app: -1|req: -1/2] 192.168.5.254 () {46 vars in 832 bytes} [Tue Sep 13 20:28:24 2016] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 29974|app: -1|req: -1/3] 192.168.5.254 () {44 vars in 857 bytes} [Tue Sep 13 20:28:24 2016] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 29974|app: -1|req: -1/4] 192.168.5.254 () {46 vars in 832 bytes} [Tue Sep 13 20:28:24 2016] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+Tue Sep 13 20:28:46 2016 - received message 0 from emperor
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.13.1 (64bit) on [Wed Sep 14 09:18:26 2016] ***
+compiled with version: 4.9.2 on 13 September 2016 20:27:59
+os: Linux-3.16.0-4-amd64 #1 SMP Debian 3.16.7-ckt25-1 (2016-03-06)
+nodename: gps
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /etc/uwsgi/apps-enabled
+writing pidfile to /tmp/insite.pid
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/django/sites/insite/mynewenv/
+your processes number limit is 11937
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/uwsgi.sock fd 3
+Python version: 3.4.2 (default, Oct  8 2014, 10:47:48)  [GCC 4.9.1]
+Set PythonHome to /home/django/sites/insite/mynewenv/
+Python main interpreter initialized at 0x17b00f0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x17b00f0 pid: 12957 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 12957)
+spawned uWSGI worker 1 (pid: 12959, cores: 2)
+spawned uWSGI worker 2 (pid: 12961, cores: 2)
+spawned uWSGI worker 3 (pid: 12963, cores: 2)
+spawned uWSGI worker 4 (pid: 12965, cores: 2)
+Not Found: /favicon.ico
+[pid: 12963|app: 0|req: 1/1] 192.168.5.254 () {40 vars in 641 bytes} [Wed Sep 14 09:19:01 2016] GET /favicon.ico => generated 2149 bytes in 12 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 12965|app: 0|req: 1/2] 192.168.5.254 () {46 vars in 810 bytes} [Wed Sep 14 09:19:36 2016] GET / => generated 56 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 12965|app: 0|req: 2/3] 192.168.5.254 () {40 vars in 708 bytes} [Wed Sep 14 09:19:42 2016] GET /instrukciy => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 127 bytes (1 switches on core 1)
+[pid: 12965|app: 0|req: 3/4] 192.168.5.254 () {40 vars in 710 bytes} [Wed Sep 14 09:19:42 2016] GET /instrukciy/ => generated 379 bytes in 14 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 1)
+[pid: 12965|app: 0|req: 4/5] 192.168.5.254 () {40 vars in 698 bytes} [Wed Sep 14 09:19:48 2016] GET /admin => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 122 bytes (1 switches on core 0)
+[pid: 12965|app: 0|req: 5/6] 192.168.5.254 () {40 vars in 700 bytes} [Wed Sep 14 09:19:48 2016] GET /admin/ => generated 0 bytes in 10 msecs (HTTP/1.1 302) 7 headers in 292 bytes (1 switches on core 1)
+[pid: 12965|app: 0|req: 6/7] 192.168.5.254 () {40 vars in 737 bytes} [Wed Sep 14 09:19:48 2016] GET /admin/login/?next=/admin/ => generated 1744 bytes in 11 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 12965|app: 0|req: 7/8] 192.168.5.254 () {44 vars in 851 bytes} [Wed Sep 14 09:19:54 2016] GET /admin/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 7 headers in 292 bytes (1 switches on core 1)
+[pid: 12965|app: 0|req: 8/9] 192.168.5.254 () {44 vars in 888 bytes} [Wed Sep 14 09:19:54 2016] GET /admin/login/?next=/admin/ => generated 1744 bytes in 7 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 1)
+[pid: 12965|app: 0|req: 9/10] 192.168.5.254 () {46 vars in 919 bytes} [Wed Sep 14 09:28:03 2016] GET /admin/login/?next=/admin/ => generated 1744 bytes in 8 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 12965|app: 0|req: 10/11] 192.168.5.254 () {46 vars in 919 bytes} [Wed Sep 14 09:28:04 2016] GET /admin/login/?next=/admin/ => generated 1744 bytes in 8 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 1)
+[pid: 12965|app: 0|req: 11/12] 192.168.5.254 () {42 vars in 789 bytes} [Wed Sep 14 09:28:08 2016] GET /admin/ => generated 0 bytes in 0 msecs (HTTP/1.1 302) 7 headers in 292 bytes (1 switches on core 0)
+[pid: 12965|app: 0|req: 12/13] 192.168.5.254 () {42 vars in 826 bytes} [Wed Sep 14 09:28:08 2016] GET /admin/login/?next=/admin/ => generated 1744 bytes in 7 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+Wed Sep 14 09:29:11 2016 - received message 0 from emperor
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.13.1 (64bit) on [Wed Sep 14 09:29:16 2016] ***
+compiled with version: 4.9.2 on 13 September 2016 20:27:59
+os: Linux-3.16.0-4-amd64 #1 SMP Debian 3.16.7-ckt25-1 (2016-03-06)
+nodename: gps
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /etc/uwsgi/apps-enabled
+writing pidfile to /tmp/insite.pid
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/django/sites/insite/mynewenv/
+your processes number limit is 11937
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/uwsgi.sock fd 3
+Python version: 3.4.2 (default, Oct  8 2014, 10:47:48)  [GCC 4.9.1]
+Set PythonHome to /home/django/sites/insite/mynewenv/
+Python main interpreter initialized at 0x1be60f0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+Traceback (most recent call last):
+  File "../insite/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/apps/config.py", line 199, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/importlib/__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/models.py", line 6, in <module>
+    from tinymce import widgets as tinymce_widgets
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/widgets.py", line 23, in <module>
+    import tinymce.settings
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/settings.py", line 17, in <module>
+    JS_ROOT = getattr(settings, 'TINYMCE_JS_ROOT', finders.find('tiny_mce', all=False))
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 249, in find
+    for finder in get_finders():
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 264, in get_finders
+    yield get_finder(finder_path)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/functools.py", line 434, in wrapper
+    result = user_function(*args, **kwds)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 277, in get_finder
+    return Finder()
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 66, in __init__
+    "The STATICFILES_DIRS setting should "
+django.core.exceptions.ImproperlyConfigured: The STATICFILES_DIRS setting should not contain the STATIC_ROOT setting
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 13240)
+spawned uWSGI worker 1 (pid: 13242, cores: 2)
+spawned uWSGI worker 2 (pid: 13244, cores: 2)
+spawned uWSGI worker 3 (pid: 13246, cores: 2)
+spawned uWSGI worker 4 (pid: 13248, cores: 2)
+--- no python application found, check your startup logs for errors ---
+[pid: 13246|app: -1|req: -1/1] 192.168.5.254 () {44 vars in 857 bytes} [Wed Sep 14 09:29:18 2016] GET /admin/login/?next=/admin/ => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 13248|app: -1|req: -1/2] 192.168.5.254 () {44 vars in 857 bytes} [Wed Sep 14 09:29:19 2016] GET /admin/login/?next=/admin/ => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 13248|app: -1|req: -1/3] 192.168.5.254 () {42 vars in 777 bytes} [Wed Sep 14 09:29:29 2016] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+Wed Sep 14 09:30:02 2016 - received message 0 from emperor
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.13.1 (64bit) on [Wed Sep 14 09:30:22 2016] ***
+compiled with version: 4.9.2 on 13 September 2016 20:27:59
+os: Linux-3.16.0-4-amd64 #1 SMP Debian 3.16.7-ckt25-1 (2016-03-06)
+nodename: gps
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /etc/uwsgi/apps-enabled
+writing pidfile to /tmp/insite.pid
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/django/sites/insite/mynewenv/
+your processes number limit is 11937
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/uwsgi.sock fd 3
+Python version: 3.4.2 (default, Oct  8 2014, 10:47:48)  [GCC 4.9.1]
+Set PythonHome to /home/django/sites/insite/mynewenv/
+Python main interpreter initialized at 0x1b3b0f0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+Traceback (most recent call last):
+  File "../insite/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/apps/config.py", line 199, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/importlib/__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/models.py", line 6, in <module>
+    from tinymce import widgets as tinymce_widgets
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/widgets.py", line 23, in <module>
+    import tinymce.settings
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/tinymce/settings.py", line 17, in <module>
+    JS_ROOT = getattr(settings, 'TINYMCE_JS_ROOT', finders.find('tiny_mce', all=False))
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 249, in find
+    for finder in get_finders():
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 264, in get_finders
+    yield get_finder(finder_path)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/functools.py", line 434, in wrapper
+    result = user_function(*args, **kwds)
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 277, in get_finder
+    return Finder()
+  File "/home/django/sites/insite/mynewenv/lib/python3.4/site-packages/django/contrib/staticfiles/finders.py", line 66, in __init__
+    "The STATICFILES_DIRS setting should "
+django.core.exceptions.ImproperlyConfigured: The STATICFILES_DIRS setting should not contain the STATIC_ROOT setting
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 13316)
+spawned uWSGI worker 1 (pid: 13318, cores: 2)
+spawned uWSGI worker 2 (pid: 13320, cores: 2)
+spawned uWSGI worker 3 (pid: 13322, cores: 2)
+spawned uWSGI worker 4 (pid: 13324, cores: 2)
+--- no python application found, check your startup logs for errors ---
+[pid: 13322|app: -1|req: -1/1] 192.168.5.254 () {44 vars in 808 bytes} [Wed Sep 14 09:30:24 2016] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 13318|app: -1|req: -1/2] 192.168.5.254 () {44 vars in 808 bytes} [Wed Sep 14 09:30:25 2016] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+announcing my loyalty to the Emperor...
+--- no python application found, check your startup logs for errors ---
+[pid: 13322|app: -1|req: -1/3] 192.168.5.254 () {44 vars in 808 bytes} [Wed Sep 14 09:30:52 2016] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+Wed Sep 14 09:30:57 2016 - received message 0 from emperor
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.13.1 (64bit) on [Wed Sep 14 09:31:01 2016] ***
+compiled with version: 4.9.2 on 13 September 2016 20:27:59
+os: Linux-3.16.0-4-amd64 #1 SMP Debian 3.16.7-ckt25-1 (2016-03-06)
+nodename: gps
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /etc/uwsgi/apps-enabled
+writing pidfile to /tmp/insite.pid
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/django/sites/insite/mynewenv/
+your processes number limit is 11937
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/uwsgi.sock fd 3
+Python version: 3.4.2 (default, Oct  8 2014, 10:47:48)  [GCC 4.9.1]
+Set PythonHome to /home/django/sites/insite/mynewenv/
+Python main interpreter initialized at 0x12690f0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x12690f0 pid: 13342 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 13342)
+spawned uWSGI worker 1 (pid: 13344, cores: 2)
+spawned uWSGI worker 2 (pid: 13346, cores: 2)
+spawned uWSGI worker 3 (pid: 13348, cores: 2)
+spawned uWSGI worker 4 (pid: 13350, cores: 2)
+[pid: 13344|app: 0|req: 1/1] 192.168.5.254 () {44 vars in 808 bytes} [Wed Sep 14 09:31:03 2016] GET / => generated 56 bytes in 7 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 13350|app: 0|req: 1/2] 192.168.5.254 () {42 vars in 787 bytes} [Wed Sep 14 09:31:08 2016] GET /admin => generated 0 bytes in 5 msecs (HTTP/1.1 301) 3 headers in 122 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 13350|app: 0|req: 2/3] 192.168.5.254 () {42 vars in 789 bytes} [Wed Sep 14 09:31:08 2016] GET /admin/ => generated 0 bytes in 14 msecs (HTTP/1.1 302) 7 headers in 292 bytes (1 switches on core 1)
+[pid: 13346|app: 0|req: 1/4] 192.168.5.254 () {42 vars in 826 bytes} [Wed Sep 14 09:31:08 2016] GET /admin/login/?next=/admin/ => generated 1744 bytes in 39 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+SIGINT/SIGQUIT received...killing workers...
+Wed Sep 14 09:32:32 2016 - received message 0 from emperor
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.13.1 (64bit) on [Wed Sep 14 09:33:32 2016] ***
+compiled with version: 4.9.2 on 13 September 2016 20:27:59
+os: Linux-3.16.0-4-amd64 #1 SMP Debian 3.16.7-ckt25-1 (2016-03-06)
+nodename: gps
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /etc/uwsgi/apps-enabled
+writing pidfile to /tmp/insite.pid
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/django/sites/insite/mynewenv/
+your processes number limit is 11937
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/uwsgi.sock fd 3
+Python version: 3.4.2 (default, Oct  8 2014, 10:47:48)  [GCC 4.9.1]
+Set PythonHome to /home/django/sites/insite/mynewenv/
+Python main interpreter initialized at 0x25df0f0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x25df0f0 pid: 13414 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 13414)
+spawned uWSGI worker 1 (pid: 13416, cores: 2)
+spawned uWSGI worker 2 (pid: 13418, cores: 2)
+spawned uWSGI worker 3 (pid: 13420, cores: 2)
+spawned uWSGI worker 4 (pid: 13422, cores: 2)
+[pid: 13422|app: 0|req: 1/1] 192.168.5.254 () {44 vars in 857 bytes} [Wed Sep 14 09:33:36 2016] GET /admin/login/?next=/admin/ => generated 1744 bytes in 40 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 13422|app: 0|req: 2/2] 192.168.5.254 () {44 vars in 857 bytes} [Wed Sep 14 09:33:37 2016] GET /admin/login/?next=/admin/ => generated 1744 bytes in 8 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 1)
+[pid: 13422|app: 0|req: 3/3] 192.168.5.254 () {42 vars in 777 bytes} [Wed Sep 14 09:33:41 2016] GET / => generated 56 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 13422|app: 0|req: 4/4] 192.168.5.254 () {44 vars in 808 bytes} [Wed Sep 14 10:42:52 2016] GET / => generated 56 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 13416|app: 0|req: 1/5] 192.168.5.254 () {42 vars in 789 bytes} [Wed Sep 14 10:43:02 2016] GET /admin/ => generated 0 bytes in 20 msecs (HTTP/1.1 302) 7 headers in 292 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 13416|app: 0|req: 2/6] 192.168.5.254 () {42 vars in 826 bytes} [Wed Sep 14 10:43:02 2016] GET /admin/login/?next=/admin/ => generated 1744 bytes in 20 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 1)
+[pid: 13420|app: 0|req: 1/7] 192.168.5.254 () {42 vars in 826 bytes} [Wed Sep 14 10:43:50 2016] GET /admin/login/?next=/admin/ => generated 1744 bytes in 39 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+Not Found: /static
+[pid: 13420|app: 0|req: 2/8] 192.168.5.254 () {42 vars in 789 bytes} [Wed Sep 14 10:44:05 2016] GET /static => generated 2134 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 13418|app: 0|req: 1/9] 192.168.5.254 () {44 vars in 857 bytes} [Wed Sep 14 10:49:15 2016] GET /admin/login/?next=/admin/ => generated 1744 bytes in 39 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 13422|app: 0|req: 5/10] 192.168.5.254 () {52 vars in 1065 bytes} [Wed Sep 14 10:49:24 2016] POST /admin/login/?next=/admin/ => generated 0 bytes in 374 msecs (HTTP/1.1 302) 9 headers in 558 bytes (1 switches on core 0)
+[pid: 13422|app: 0|req: 6/11] 192.168.5.254 () {46 vars in 926 bytes} [Wed Sep 14 10:49:24 2016] GET /admin/ => generated 7424 bytes in 18 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 1)
+[pid: 13422|app: 0|req: 7/12] 192.168.5.254 () {44 vars in 895 bytes} [Wed Sep 14 11:05:16 2016] GET /admin/ => generated 7424 bytes in 16 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+Not Found: /media
+[pid: 13422|app: 0|req: 8/13] 192.168.5.254 () {42 vars in 831 bytes} [Wed Sep 14 11:06:32 2016] GET /media => generated 2131 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 13422|app: 0|req: 9/14] 192.168.5.254 () {42 vars in 870 bytes} [Wed Sep 14 11:17:52 2016] GET /admin/login/?next=/admin/ => generated 0 bytes in 2 msecs (HTTP/1.1 302) 7 headers in 273 bytes (1 switches on core 0)
+[pid: 13416|app: 0|req: 3/15] 192.168.5.254 () {42 vars in 833 bytes} [Wed Sep 14 11:17:52 2016] GET /admin/ => generated 7424 bytes in 20 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 0)
+[pid: 13422|app: 0|req: 10/16] 192.168.5.254 () {44 vars in 876 bytes} [Wed Sep 14 11:17:54 2016] GET /admin/ => generated 7424 bytes in 16 msecs (HTTP/1.1 200) 6 headers in 251 bytes (1 switches on core 1)
+[pid: 13422|app: 0|req: 11/17] 192.168.5.254 () {44 vars in 890 bytes} [Wed Sep 14 11:17:56 2016] GET /admin/logout/ => generated 1100 bytes in 266 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 13422|app: 0|req: 12/18] 192.168.5.254 () {46 vars in 877 bytes} [Wed Sep 14 11:17:57 2016] GET /admin/logout/ => generated 0 bytes in 0 msecs (HTTP/1.1 302) 7 headers in 273 bytes (1 switches on core 1)
+[pid: 13422|app: 0|req: 13/19] 192.168.5.254 () {46 vars in 863 bytes} [Wed Sep 14 11:17:57 2016] GET /admin/ => generated 0 bytes in 0 msecs (HTTP/1.1 302) 7 headers in 292 bytes (1 switches on core 1)
+[pid: 13418|app: 0|req: 2/20] 192.168.5.254 () {46 vars in 900 bytes} [Wed Sep 14 11:17:57 2016] GET /admin/login/?next=/admin/ => generated 1744 bytes in 8 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 1)
+[pid: 13422|app: 0|req: 14/21] 192.168.5.254 () {44 vars in 869 bytes} [Wed Sep 14 11:18:03 2016] GET /admin/login/?next=/admin/ => generated 1744 bytes in 8 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+Wed Sep 14 11:23:56 2016 - received message 0 from emperor
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.13.1 (64bit) on [Wed Sep 14 11:24:02 2016] ***
+compiled with version: 4.9.2 on 13 September 2016 20:27:59
+os: Linux-3.16.0-4-amd64 #1 SMP Debian 3.16.7-ckt25-1 (2016-03-06)
+nodename: gps
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /etc/uwsgi/apps-enabled
+writing pidfile to /tmp/insite.pid
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /home/django/sites/insite/mynewenv/
+your processes number limit is 11937
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/uwsgi.sock fd 3
+Python version: 3.4.2 (default, Oct  8 2014, 10:47:48)  [GCC 4.9.1]
+Set PythonHome to /home/django/sites/insite/mynewenv/
+Python main interpreter initialized at 0x1ddc0f0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1ddc0f0 pid: 15756 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 15756)
+spawned uWSGI worker 1 (pid: 15758, cores: 2)
+spawned uWSGI worker 2 (pid: 15760, cores: 2)
+spawned uWSGI worker 3 (pid: 15762, cores: 2)
+spawned uWSGI worker 4 (pid: 15764, cores: 2)
+[pid: 15764|app: 0|req: 1/1] 192.168.5.254 () {46 vars in 900 bytes} [Wed Sep 14 11:24:14 2016] GET /admin/login/?next=/admin/ => generated 1744 bytes in 39 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 15764|app: 0|req: 2/2] 192.168.5.254 () {46 vars in 900 bytes} [Wed Sep 14 11:24:15 2016] GET /admin/login/?next=/admin/ => generated 1744 bytes in 8 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 1)
+[pid: 15764|app: 0|req: 3/3] 192.168.5.254 () {46 vars in 900 bytes} [Wed Sep 14 11:24:16 2016] GET /admin/login/?next=/admin/ => generated 1744 bytes in 8 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)
+[pid: 15764|app: 0|req: 4/4] 192.168.5.254 () {42 vars in 789 bytes} [Wed Sep 14 11:24:19 2016] GET /admin/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 7 headers in 292 bytes (1 switches on core 1)
+[pid: 15764|app: 0|req: 5/5] 192.168.5.254 () {42 vars in 826 bytes} [Wed Sep 14 11:24:19 2016] GET /admin/login/?next=/admin/ => generated 1744 bytes in 8 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 1)
+[pid: 15764|app: 0|req: 6/6] 192.168.5.254 () {42 vars in 826 bytes} [Wed Sep 14 11:24:23 2016] GET /admin/login/?next=/admin/ => generated 1744 bytes in 8 msecs (HTTP/1.1 200) 7 headers in 405 bytes (1 switches on core 0)

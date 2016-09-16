@@ -4,4 +4,4 @@ from django.http import HttpResponse
 
 
 def MainPageView(request):
-    return HttpResponse("Это заглавная страница сайта!!!")
+    return HttpResponse("<a href='http://in.vapg.com.ua/instrukciy/'>Посадові інструкції</a>")
