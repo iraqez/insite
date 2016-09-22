@@ -1,4 +1,7 @@
 from django.shortcuts import render
+from docs import apps
 
 def MainPageView(request):
-    return render(request, 'redirect/index.html')
+    app_docs = apps.InstrConfig.verbose_name
+    context = {'app_docs': app_docs}
+    return render(request, 'redirect/index.html', context)

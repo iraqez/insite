@@ -1,9 +1,12 @@
-{% if latest_subdivisions_list %}
-    <ul>
-    {% for subdivision in latest_subdivisions_list %}
-        <li><a href={% url 'index' %}{{ subdivision.slug }}>{{ subdivision.title }}</a></li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>Немає підрозділів</p>
-{% endif %}
+{% extends 'base.html' %}
+{% block site %}
+    {% if latest_subdivisions_list %}
+        <ul>
+        {% for subdivision in latest_subdivisions_list %}
+            <li><a href={% url 'index' %}{{ subdivision.slug }}>{{ subdivision.title }}</a></li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>Немає підрозділів</p>
+    {% endif %}
+{% endblock %}

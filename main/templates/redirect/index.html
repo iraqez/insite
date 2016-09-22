@@ -1,1 +1,5 @@
-<a href={% url 'index' %}>Документи</a>
+{% extends 'base.html' %}
+{% block site %}
+    <br>
+        <li><a href={% url 'index' %}>{{ app_docs }}</a></li>
+{% endblock %}
