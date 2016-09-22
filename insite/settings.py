@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django_cleanup',
     'tinymce',
     'docs',
+    'main',
 ]
 
 MIDDLEWARE_CLASSES = [
