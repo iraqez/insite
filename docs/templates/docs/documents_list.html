@@ -1,0 +1,10 @@
+{% extends 'docs/index.html' %}
+{% block category_list %}
+    {% if latest_instr_list %}
+        {% for doc in latest_instr_list %}
+            <li><a href={{ doc.slug }}>{{ doc.title }}</a></li>
+        {% endfor %}
+    {% else %}
+        <p>Немає інструкцій для цього підрозділу</p>
+    {% endif %}
+{% endblock %}
