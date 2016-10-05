@@ -16,12 +16,9 @@ class IndexView(generic.ListView):
 
 class InstrukciyView(generic.ListView):
     template_name = 'docs/documents_list.html'
-    # context_object_name = 'latest_instr_list'
-    # queryset = LeadingInstrukciy.objects.filter(subdivision__title='IT')
+    context_object_name = 'latest_instr_list'
+    queryset = LeadingInstrukciy.objects.filter(subdivision__title='IT')
 
-    def get_queryset(self):
-        self.subdivision = get_object_or_404(Subdivision, name=self.args[1])
-        return LeadingInstrukciy.objects.filter(subdivision=self.subdivision)
 
     # def get_context_data(self, **kwargs):
     #     # Call the base implementation first to get a context
