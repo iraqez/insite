@@ -1,9 +1,12 @@
 {% extends 'docs/index.html' %}
 {% block category_list %}
+    <h3>{{ subdivision }}</h3>
     {% if latest_instr_list %}
-        {% for doc in latest_instr_list %}
-            <li><a href={{ doc.slug }}>{{ doc.title }}</a></li>
+        <ul>
+        {% for instr in latest_instr_list %}
+            <li><a href={{ instr.slug }}>{{ instr.title }}</a></li>
         {% endfor %}
+        </ul>
     {% else %}
         <p>Немає інструкцій для цього підрозділу</p>
     {% endif %}
