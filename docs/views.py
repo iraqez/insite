@@ -36,15 +36,13 @@ class SubdivisionInstrView(generic.ListView):
         context['subdivision_slug'] = self.request.path
         app_docs = apps.InstrConfig.verbose_name
         context['app_docs'] = app_docs
+        context['latest_pol_list'] = LeadingPolozhennya.objects.filter(subdivision=self.subdivision)
+        context['latest_proc_list'] = LeadingProcedure.objects.filter(subdivision=self.subdivision)
         return context
 
-
-class SubdivisionPolView(generic.ListView):
-    template_name = 'docs/documents_list.html'
-    context_object_name = 'latest_pol_list'
+class DocView(generic.DetailView):
+    template_name = 'docs/documents.html'
+    context_object_name = 'documents'
 
     def get_queryset(self):
-        self.subdivision = Subdivision.objects.filter(slug=self.request.path.split('/')[-2])
-        return LeadingPolozhennya.objects.filter(subdivision=self.subdivision)
-
-
+        return LeadingInstrukciy.objects.filter(slug=self.request.path.split('/')[-2])
