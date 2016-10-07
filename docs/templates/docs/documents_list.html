@@ -1,6 +1,10 @@
 {% extends 'docs/index.html' %}
+{% block bread %}
+    <a href={% url 'main' %}>Головна</a> > <a href={% url 'docs:index' %}>{{ app_docs }}</a> > {{ subdivision }}
+{% endblock %}
+<p>Документація по: {{ subdivision }}</p>
 {% block category_list %}
-    <h3>{{ subdivision }}</h3>
+    <h4>Посадові інструцкції</h4>
     {% if latest_instr_list %}
         <ul>
         {% for instr in latest_instr_list %}
@@ -9,5 +13,17 @@
         </ul>
     {% else %}
         <p>Немає інструкцій для цього підрозділу</p>
+    {% endif %}
+
+    <h4>Положення</h4>
+    {% if latest_pol_list %}
+        <ul>
+        {% for pol in latest_pol_list %}
+            {{ pol }}
+{#            <li><a href={{ pol.slug }}>{{ pol.title }}</a></li>#}
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>Немає положень для цього підрозділу</p>
     {% endif %}
 {% endblock %}

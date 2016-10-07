@@ -6,7 +6,7 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
-<a href={% url 'main' %}>Головна</a>
+{% block bread %}<a href={% url 'main' %}>Головна</a>{% endblock %}
 <br>
 {% block site %}{% endblock %}
 </body>

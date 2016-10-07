@@ -1,4 +1,7 @@
 {% extends 'docs/index.html' %}
+{% block bread %}
+    <a href={% url 'main' %}>Головна</a> > {{ app_docs }}
+{% endblock %}
 {% block category_list %}
     {% if latest_subdivisions_list %}
         <ul>
