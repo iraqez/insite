@@ -19,7 +19,7 @@
     {% if latest_pol_list %}
         <ul>
         {% for pol in latest_pol_list %}
-            {{ pol }}
+            {{ pol.title }}
 {#            <li><a href={{ pol.slug }}>{{ pol.title }}</a></li>#}
         {% endfor %}
         </ul>

@@ -47,9 +47,4 @@ class SubdivisionPolView(generic.ListView):
         self.subdivision = Subdivision.objects.filter(slug=self.request.path.split('/')[-2])
         return LeadingPolozhennya.objects.filter(subdivision=self.subdivision)
 
-    # def get_context_data(self, **kwargs):
-    #     context = super(SubdivisionPolView, self).get_context_data(**kwargs)
-    #     context['subdivision'] = self.subdivision.get()
-    #     return context
-
 
