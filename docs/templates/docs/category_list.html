@@ -6,7 +6,7 @@
     {% if latest_subdivisions_list %}
         <ul>
             {% for divisions in latest_subdivisions_list %}
-                <li><a href="{% url 'docs2:index' %}{{ divisions.slug }}">{{ divisions.title }}</a></li>
+                <li><a href="{% url 'docs:index' %}{{ divisions.slug }}">{{ divisions.title }}</a></li>
             {% endfor %}
         </ul>
     {% else %}

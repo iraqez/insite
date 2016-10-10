@@ -42,9 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_cleanup',
     'tinymce',
-    'docs',
+ #   'docs',
     'main',
-    'docs2',
+    'docs',
 ]
 
 MIDDLEWARE_CLASSES = [

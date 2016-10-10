@@ -1,37 +1,20 @@
 from django.contrib import admin
-from .models import Subdivision, \
-                    LeadingInstrukciy, DocsInstrukciy,\
-                    LeadingPolozhennya, DocsPolozhennya,\
-                    LeadingProcedure, DocsProcedure
+from .models import Subdivision, Leading, DocsLeading
 
-
-class DocsInstrukciyInLine(admin.TabularInline):
-    model = DocsInstrukciy
-
-class DocsPolozhennyaInLine(admin.TabularInline):
-    model = DocsPolozhennya
-
-class DocsProcedureInLine(admin.TabularInline):
-    model = DocsProcedure
+class DocsInLine(admin.TabularInline):
+    model = DocsLeading
 
 class SubdivisionAdmin(admin.ModelAdmin):
     list_display = ('title', 'slug')
     prepopulated_fields = {'slug' : ('title',)}
 
-class LeadingInstrukciyAdmin(admin.ModelAdmin):
+class LeadingAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug' : ('title',)}
-    inlines = [ DocsInstrukciyInLine ]
-
-class LeadingPolozhennyaAdmin(admin.ModelAdmin):
-    prepopulated_fields = {'slug' : ('title',)}
-    inlines = [ DocsPolozhennyaInLine ]
-
-class LeadingProcedureAdmin(admin.ModelAdmin):
-    prepopulated_fields = {'slug' : ('title',)}
-    inlines = [ DocsProcedureInLine ]
+    list_display = ('doc_type_choices', 'title', )
+    ordering = ('doc_type_choices',)
+    list_filter = ('doc_type_choices', )
+    inlines = [ DocsInLine ]
 
 admin.site.register(Subdivision, SubdivisionAdmin)
+admin.site.register(Leading, LeadingAdmin,)
 
-admin.site.register(LeadingInstrukciy, LeadingInstrukciyAdmin,)
-admin.site.register(LeadingPolozhennya, LeadingPolozhennyaAdmin,)
-admin.site.register(LeadingProcedure, LeadingProcedureAdmin,)

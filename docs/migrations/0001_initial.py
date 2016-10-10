@@ -16,11 +16,11 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='DocsInstrukciy',
+            name='DocsLeading',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('title', models.CharField(max_length=100, verbose_name='Назва документу')),
-                ('file', models.FileField(upload_to='docs2/', verbose_name='Файл для скачування')),
+                ('file', models.FileField(upload_to='docs/', verbose_name='Файл для скачування')),
             ],
             options={
                 'verbose_name_plural': 'Документи',
@@ -29,68 +29,17 @@ class Migration(migrations.Migration):
             },
         ),
         migrations.CreateModel(
-            name='DocsPolozhennya',
+            name='Leading',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(max_length=100, verbose_name='Назва документу')),
-                ('file', models.FileField(upload_to='docs2/', verbose_name='Файл для скачування')),
+                ('doc_type_choices', models.CharField(choices=[('INSTR', 'Інструкція'), ('POL', 'Положення'), ('PROC', 'Процедура')], default='INSTR', help_text='Оберіть тип документу(інструкція, положення, процедура)', max_length=5, verbose_name='Тип документу')),
+                ('title', models.CharField(max_length=100, verbose_name='Назва')),
+                ('slug', models.SlugField(help_text='Унікальне значення в адресній строці, добавляється автоматично.', max_length=255, unique=True, verbose_name='Адресна строка')),
+                ('text', tinymce.models.HTMLField(verbose_name='Зміст')),
             ],
             options={
                 'verbose_name_plural': 'Документи',
                 'verbose_name': 'Документ',
-                'abstract': False,
-            },
-        ),
-        migrations.CreateModel(
-            name='DocsProcedure',
-            fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(max_length=100, verbose_name='Назва документу')),
-                ('file', models.FileField(upload_to='docs2/', verbose_name='Файл для скачування')),
-            ],
-            options={
-                'verbose_name_plural': 'Документи',
-                'verbose_name': 'Документ',
-                'abstract': False,
-            },
-        ),
-        migrations.CreateModel(
-            name='LeadingInstrukciy',
-            fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(max_length=100, verbose_name='Назва')),
-                ('slug', models.SlugField(help_text='Унікальне значення в адресній строці, добавляється автоматично.', max_length=255, unique=True, verbose_name='Адресна строка')),
-                ('text', tinymce.models.HTMLField(verbose_name='Зміст')),
-            ],
-            options={
-                'verbose_name_plural': 'Інструкції',
-                'verbose_name': 'Інструкція',
-            },
-        ),
-        migrations.CreateModel(
-            name='LeadingPolozhennya',
-            fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(max_length=100, verbose_name='Назва')),
-                ('slug', models.SlugField(help_text='Унікальне значення в адресній строці, добавляється автоматично.', max_length=255, unique=True, verbose_name='Адресна строка')),
-                ('text', tinymce.models.HTMLField(verbose_name='Зміст')),
-            ],
-            options={
-                'verbose_name_plural': 'Положення',
-                'verbose_name': 'Положення',
-            },
-        ),
-        migrations.CreateModel(
-            name='LeadingProcedure',
-            fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(max_length=100, verbose_name='Назва')),
-                ('slug', models.SlugField(help_text='Унікальне значення в адресній строці, добавляється автоматично.', max_length=255, unique=True, verbose_name='Адресна строка')),
-                ('text', tinymce.models.HTMLField(verbose_name='Зміст')),
-            ],
-            options={
-                'verbose_name_plural': 'Процедури',
-                'verbose_name': 'Процедура',
             },
         ),
         migrations.CreateModel(
@@ -106,33 +55,13 @@ class Migration(migrations.Migration):
             },
         ),
         migrations.AddField(
-            model_name='leadingprocedure',
+            model_name='leading',
             name='subdivision',
             field=models.ManyToManyField(to='docs.Subdivision', verbose_name='Підрозділ'),
         ),
         migrations.AddField(
-            model_name='leadingpolozhennya',
-            name='subdivision',
-            field=models.ManyToManyField(to='docs.Subdivision', verbose_name='Підрозділ'),
-        ),
-        migrations.AddField(
-            model_name='leadinginstrukciy',
-            name='subdivision',
-            field=models.ManyToManyField(to='docs.Subdivision', verbose_name='Підрозділ'),
-        ),
-        migrations.AddField(
-            model_name='docsprocedure',
+            model_name='docsleading',
             name='leading',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='docs.LeadingProcedure'),
-        ),
-        migrations.AddField(
-            model_name='docspolozhennya',
-            name='leading',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='docs.LeadingPolozhennya'),
-        ),
-        migrations.AddField(
-            model_name='docsinstrukciy',
-            name='leading',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='docs.LeadingInstrukciy'),
+            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='docs.Leading'),
         ),
     ]

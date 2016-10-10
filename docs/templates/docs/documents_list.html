@@ -1,6 +1,6 @@
 {% extends 'docs/index.html' %}
 {% block bread %}
-    <a href={% url 'main' %}>Головна</a> > <a href={% url 'docs2:index' %}>{{ app_docs }}</a> > {{ subdivision }}
+    <a href={% url 'main' %}>Головна</a> > <a href={% url 'docs:index' %}>{{ app_docs }}</a> > {{ subdivision }}
 {% endblock %}
 <p>Документація по: {{ subdivision }}</p>
 {% block category_list %}
@@ -8,6 +8,7 @@
     {% if latest_instr_list %}
         <ul>
         {% for instr in latest_instr_list %}
+{#            <li><a href={% url 'docs:docs' %}>{{ instr.title }}</a></li>#}
             <li><a href={{ instr.slug }}>{{ instr.title }}</a></li>
         {% endfor %}
         </ul>
