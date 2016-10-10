@@ -3,7 +3,7 @@ from django.conf.urls import url
 from . import views
 from docs.views import SubdivisionInstrView, DocView
 
-app_name = 'docs'
+app_name = 'docs2'
 urlpatterns = [
     url(r'^$', views.IndexView.as_view(), name='index'),
     url(r'(?P<subdivision_slug>\w+)/', SubdivisionInstrView.as_view(), name='instr'),

@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'tinymce',
     'docs',
     'main',
+    'docs2',
 ]
 
 MIDDLEWARE_CLASSES = [

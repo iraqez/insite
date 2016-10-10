@@ -1,6 +1,6 @@
-{% extends 'docs/index.html' %}
+{% extends 'docs2/index.html' %}
 {% block bread %}
-    <a href={% url 'main' %}>Головна</a> > {{ app_docs }}
+    <a href={% url 'main' %}>Головна</a> > {{ app_docs2 }}
 {% endblock %}
 {% block category_list %}
     {% if latest_subdivisions_list %}
@@ -10,6 +10,6 @@
             {% endfor %}
         </ul>
     {% else %}
-        <p>Немає підрозділів</p>
+        <p>Немає підрозділів2</p>
     {% endif %}
 {% endblock category_list %}
