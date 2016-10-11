@@ -1,7 +1,8 @@
 from django.views import generic
 from docs import apps
+from django.shortcuts import get_object_or_404
 
-from .models import Subdivision, Leading
+from .models import Subdivision, Leading, DocsLeading
 
 class IndexView(generic.ListView):
     template_name = 'docs/category_list.html'
@@ -15,6 +16,7 @@ class IndexView(generic.ListView):
         return context
 
 class SubdivisionView(generic.ListView):
+    model = Subdivision
     template_name = 'docs/documents_list.html'
     # context_object_name = 'latest_instr_list'
 
@@ -30,18 +32,22 @@ class SubdivisionView(generic.ListView):
         context['latest_pol_list'] = Leading.objects.filter(doc_type_choices='POL').filter(subdivision=self.subdivision)
         context['latest_instr_list'] = Leading.objects.filter(doc_type_choices='INSTR').filter(subdivision=self.subdivision)
         context['latest_proc_list'] = Leading.objects.filter(doc_type_choices='PROC').filter(subdivision=self.subdivision)
+        context['leading_docs'] = DocsLeading.objects.filter(leading_id=3)
         return context
 
 class LeadingView(generic.DetailView):
     model = Leading
-    template_name = 'docs/test.html'
+    template_name = 'docs/documents.html'
+    context_object_name = 'detail'
 
-    # def get_object(self):
-    #     object = super(LeadingView, self).get_object()
-    #     return object
+
     def get_queryset(self):
-        self.subdivision = Subdivision.objects.filter(slug=self.request.path.split('/')[-2])
+        slug = self.kwargs['slug']
+        return Leading.objects.filter(slug=self.request.path.split('/')[-2])
 
-    def get(self, request, *args, **kwargs):
-        self.object = self.get_object()
-        return super(LeadingView, self).get(request, *args, **kwargs)
+
+    def get_context_data(self, **kwargs):
+        context = super(LeadingView, self).get_context_data(**kwargs)
+        # context['leading_title'] = self.object.get().title
+        # context['slug'] = self.object.get().slug
+        return context
