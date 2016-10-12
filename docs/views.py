@@ -32,13 +32,24 @@ class SubdivisionView(generic.ListView):
         context['latest_pol_list'] = Leading.objects.filter(doc_type_choices='POL').filter(subdivision=self.subdivision)
         context['latest_instr_list'] = Leading.objects.filter(doc_type_choices='INSTR').filter(subdivision=self.subdivision)
         context['latest_proc_list'] = Leading.objects.filter(doc_type_choices='PROC').filter(subdivision=self.subdivision)
-        context['leading_docs'] = DocsLeading.objects.filter(leading_id=3)
         return context
 
 class LeadingView(generic.DetailView):
     model = Leading
     template_name = 'docs/documents.html'
-    context_object_name = 'detail'
+    context_object_name = 'leading_detail'
+
+    # def get_or_none(model, **kwargs):
+    #     try:
+    #         return model.objects.get(**kwargs)
+    #     except model.DoesNotExist:
+    #         return None
+
+
+    # def get_object(self):
+    #    # context = LeadingView.get_or_none(LeadingView, slug = self.slug)
+    #     # context = super(LeadingView, self).get_object(self.request)
+    #     return context
 
 
     def get_queryset(self):
