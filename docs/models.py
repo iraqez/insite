@@ -37,7 +37,7 @@ class Leading(models.Model):
 
     def get_absolute_url(self):
         from django.core.urlresolvers import reverse
-        return reverse('leading_detail', kwargs={'slug':self.slug})
+        return reverse('leading_detail', kwargs={'slug':self.slug, 'subdivision':self.subdivision } )
 
     def __str__(self):
         return self.title

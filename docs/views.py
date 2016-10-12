@@ -18,14 +18,14 @@ class IndexView(generic.ListView):
 class SubdivisionView(generic.ListView):
     model = Subdivision
     template_name = 'docs/documents_list.html'
-    # context_object_name = 'latest_instr_list'
+    context_object_name = 'instr'
 
     def get_queryset(self):
         self.subdivision = Subdivision.objects.filter(slug=self.request.path.split('/')[-2])
 
     def get_context_data(self, **kwargs):
         context = super(SubdivisionView, self).get_context_data(**kwargs)
-        context['subdivision'] = self.subdivision.get().title
+#        context['subdivision'] = self.subdivision.get().title
         context['subdivision_slug'] = self.request.path
         app_docs = apps.InstrConfig.verbose_name
         context['app_docs'] = app_docs
@@ -34,31 +34,5 @@ class SubdivisionView(generic.ListView):
         context['latest_proc_list'] = Leading.objects.filter(doc_type_choices='PROC').filter(subdivision=self.subdivision)
         return context
 
-class LeadingView(generic.DetailView):
-    model = Leading
-    template_name = 'docs/documents.html'
-    context_object_name = 'leading_detail'
-
-    # def get_or_none(model, **kwargs):
-    #     try:
-    #         return model.objects.get(**kwargs)
-    #     except model.DoesNotExist:
-    #         return None
-
-
-    # def get_object(self):
-    #    # context = LeadingView.get_or_none(LeadingView, slug = self.slug)
-    #     # context = super(LeadingView, self).get_object(self.request)
-    #     return context
-
-
-    def get_queryset(self):
-        slug = self.kwargs['slug']
-        return Leading.objects.filter(slug=self.request.path.split('/')[-2])
-
-
-    def get_context_data(self, **kwargs):
-        context = super(LeadingView, self).get_context_data(**kwargs)
-        # context['leading_title'] = self.object.get().title
-        # context['slug'] = self.object.get().slug
-        return context
+class LeadingView(generic.TemplateView):
+    template_name = 'docs/test.html'
