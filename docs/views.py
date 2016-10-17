@@ -15,6 +15,10 @@ class IndexView(generic.ListView):
         context['app_docs'] = app_docs
         return context
 
+class LeadingView(generic.DetailView):
+    template_name = 'docs/documents.html'
+    model = Leading
+
 class SubdivisionView(generic.ListView):
     model = Subdivision
     template_name = 'docs/documents_list.html'
@@ -33,6 +37,3 @@ class SubdivisionView(generic.ListView):
         context['latest_instr_list'] = Leading.objects.filter(doc_type_choices='INSTR').filter(subdivision=self.subdivision)
         context['latest_proc_list'] = Leading.objects.filter(doc_type_choices='PROC').filter(subdivision=self.subdivision)
         return context
-
-class LeadingView(generic.TemplateView):
-    template_name = 'docs/test.html'

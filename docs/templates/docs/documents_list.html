@@ -8,7 +8,7 @@
     {% if latest_instr_list %}
         <ul>
         {% for instr in latest_instr_list %}
-            <li><a href={% url 'docs:test' %}>{{ instr.title }}</a></li>
+            <li><a href={{ instr.slug }}>{{ instr.title }}</a></li>
         {% endfor %}
         </ul>
     {% else %}
