@@ -34,6 +34,6 @@ class SubdivisionView(generic.ListView):
         app_docs = apps.InstrConfig.verbose_name
         context['app_docs'] = app_docs
         context['latest_pol_list'] = Leading.objects.filter(doc_type_choices='POL').filter(subdivision=self.subdivision)
-        context['latest_instr_list'] = Leading.objects.filter(doc_type_choices='INSTR').filter(subdivision=self.subdivision)
+        context['latest_instr_list'] = Leading.objects.filter(doc_type_choices='INSTR').filter(subdivision = self.subdivision)
         context['latest_proc_list'] = Leading.objects.filter(doc_type_choices='PROC').filter(subdivision=self.subdivision)
         return context

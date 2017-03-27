@@ -1,8 +1,6 @@
 from django.conf.urls import url
 from django.views.generic import TemplateView
 
-
-#from . import views
 from docs.views import SubdivisionView, LeadingView, IndexView
 
 app_name = 'docs'
