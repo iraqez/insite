@@ -2,8 +2,8 @@
 {% block bread %}
     <a href={% url 'main' %}>Головна</a> > <a href={% url 'docs:index' %}>{{ app_docs }}</a> > {{ subdivision }}
 {% endblock %}
-<p>Документація по: {{ subdivision }}</p>
 {% block category_list %}
+    <p>Документація по: {{ subdivision_slug }}</p>
     <h4>Посадові інструцкції</h4>
     {% if latest_instr_list %}
         <ul>
