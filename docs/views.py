@@ -18,6 +18,13 @@ class IndexView(generic.ListView):
 class LeadingView(generic.DetailView):
     template_name = 'docs/documents.html'
     model = Leading
+    context_object_name = 'leading_detail'
+
+    def get_context_data(self, **kwargs):
+        context = super(LeadingView, self).get_context_data(**kwargs)
+        #        context['subdivision'] = self.subdivision.get().title
+        context['leading_slug'] = self.request.path.split('/')[-1]
+        return context
 
 class SubdivisionView(generic.ListView):
     model = Subdivision
