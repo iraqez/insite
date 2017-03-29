@@ -25,18 +25,19 @@ class SubdivisionView(generic.ListView):
     context_object_name = 'instr'
 
     def get_queryset(self):
-        self.subdivision = Subdivision.objects.filter(slug=self.request.path.split('/')[-2])
+        sdivision = Subdivision.objects.filter(slug=self.request.path.split('/')[-2])
 
     def get_context_data(self, **kwargs):
         context = super(SubdivisionView, self).get_context_data(**kwargs)
 #        context['subdivision'] = self.subdivision.get().title
-        context['subdivision_slug'] = self.request.path
-        context['subdivision'] = self.subdivision
+        context['subdivision_slug'] = self.request.path.split('/')[-1]
+        context['subdivision_title'] = Subdivision.objects.filter(slug=self.request.path.split('/')[-1]).get()
+        # context['subdivision'] = Subdivision.objects.select_related().get(slug=self.request.path.split('/')[-2])
         app_docs = apps.InstrConfig.verbose_name
         context['app_docs'] = app_docs
         # context['latest_instr_list'] = Leading.objects.filter(doc_type_choices='INSTR').filter(subdivision = self.subdivision)
         # context['latest_instr_list'] = Leading.objects.filter(doc_type_choices='INSTR')
-        context['latest_instr_list'] = Leading.objects.filter(doc_type_choices='INSTR')
-        context['latest_pol_list'] = Leading.objects.filter(doc_type_choices='POL')
-        context['latest_proc_list'] = Leading.objects.filter(doc_type_choices='PROC')
+        context['latest_instr_list'] = Leading.objects.filter(doc_type_choices='INSTR').filter(subdivision=Subdivision.objects.filter(slug=self.request.path.split('/')[-1]))
+        context['latest_pol_list'] = Leading.objects.filter(doc_type_choices='POL').filter(subdivision=Subdivision.objects.filter(slug=self.request.path.split('/')[-1]))
+        context['latest_proc_list'] = Leading.objects.filter(doc_type_choices='PROC').filter(subdivision=Subdivision.objects.filter(slug=self.request.path.split('/')[-1]))
         return context

@@ -1,9 +1,9 @@
 {% extends 'docs/index.html' %}
 {% block bread %}
-    <a href={% url 'main' %}>Головна</a> > <a href={% url 'docs:index' %}>{{ app_docs }}</a> > {{ subdivision }}
+    <a href={% url 'main' %}>Головна</a> > <a href={% url 'docs:index' %}>{{ app_docs }}</a> > {{ subdivision_title }}
 {% endblock %}
 {% block category_list %}
-    <p>Документація по: {{ subdivision_slug }}</p>
+    <h3>Документація по підрозділу: <strong>{{ subdivision_title }}</strong></h3>
     <h4>Посадові інструцкції</h4>
     {% if latest_instr_list %}
         <ul>
