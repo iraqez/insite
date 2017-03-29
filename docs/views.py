@@ -24,8 +24,8 @@ class SubdivisionView(generic.ListView):
     template_name = 'docs/documents_list.html'
     context_object_name = 'instr'
 
-    def get_queryset(self):
-        sdivision = Subdivision.objects.filter(slug=self.request.path.split('/')[-2])
+    # def get_queryset(self):
+    #     sdivision = Subdivision.objects.filter(slug=self.request.path.split('/')[-2])
 
     def get_context_data(self, **kwargs):
         context = super(SubdivisionView, self).get_context_data(**kwargs)
